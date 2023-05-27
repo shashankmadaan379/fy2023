@@ -1,9 +1,9 @@
 const User = require("../models/userModel");
-
-exports.registerUser = async (req, res) => {
+const bcrypt = require("bcrypt");
+exports.registerController = async (req, res) => {
   try {
-    const { name, email, password } = req.body;
-    if (!name || !email || !password) {
+    const { username, email, password } = req.body;
+    if (!username || !email || !password) {
       return res.status(400).json({
         message: "Please enter all required fields",
         success: false,
@@ -16,7 +16,7 @@ exports.registerUser = async (req, res) => {
         message: "User already exist, Please Login !",
       });
     }
-    const user = await User.create({ name, email, password });
+    const user = await User.create({ username, email, password });
     return res.status(201).json({
       success: true,
       message: "User created successfully",
