@@ -1,0 +1,40 @@
+.top-banner{
+    background-color: #4fb3d4;
+}
+
+.banner-text{
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.main-nav {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-links {
+    flex-basis: 723px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+.company-logo h2{
+    width: 200px;
+}
+.nav-toggle {
+    display: none;
+}
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
