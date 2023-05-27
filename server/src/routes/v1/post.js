@@ -1,5 +1,5 @@
 const express = require("express");
-const { cloudinary } = require("cloudinary");
+const cloudinary = require("cloudinary");
 const {
   CLOUDINARY_API_KEY,
   CLOUDINARY_SECRET_KEY,
