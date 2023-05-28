@@ -2,6 +2,7 @@ import React from "react";
 import "../../index.css";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import HeaderImg from "../../assets/mindsketch-image.png";
 //Unleash the Power of AI: Create Stunning Images with a Single Click
 const Header = () => {
   return (
@@ -83,6 +84,24 @@ const Header = () => {
           </Link>
         </div>
       </nav>
+      <header>
+        <div className="flex header-section">
+          <div className="header-left">
+            <p className="header-text">AI-Powered Image Generation</p>
+            <p className="mindsketch-tagline">
+              Unleash Your Imagination with{" "}
+              <span className="tagline-brand-name">Mindsketch</span>: Where AI
+              Meets Art to Create Stunning Images
+            </p>
+            <Link to="/" class="primary-button get-started">
+              Get Started
+            </Link>
+          </div>
+          <div className="header-right">
+            <img src={HeaderImg} alt="headerimage" />
+          </div>
+        </div>
+      </header>
     </div>
   );
 };

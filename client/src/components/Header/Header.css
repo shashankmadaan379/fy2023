@@ -71,6 +71,37 @@
 .products li a:hover{
     color: var(--accent-color);
 }
+
+.header-left {
+    max-width: 40vw;
+    margin-top: 20px;
+}
+.header-section{
+    justify-content: center;
+    gap: 130px;
+    margin-top: 20px;
+}
+.header-right img {
+    width: 100%;
+    margin-top: 20px;
+   
+    
+}
+
+.header-text {
+    font-size: 90px;
+    line-height: 1;
+}
+
+.mindsketch-tagline {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.get-started{
+    margin-top: 20px;
+}
 /* 
 
  .main-nav {
