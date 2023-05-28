@@ -102,6 +102,23 @@
 .get-started{
     margin-top: 20px;
 }
+
+
+@media screen and (max-width:991px) {
+    .main-nav {
+        overflow: initial;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+}
 /* 
 
  .main-nav {

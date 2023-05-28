@@ -3,6 +3,7 @@ import "../../index.css";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import HeaderImg from "../../assets/mindsketch-image.png";
+
 //Unleash the Power of AI: Create Stunning Images with a Single Click
 const Header = () => {
   return (
