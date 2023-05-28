@@ -18,10 +18,12 @@ const Header = () => {
 
       {/* Navbar */}
       <nav>
-        <div className="main-nav flex container">
-          <Link to="/" className="company-logo">
-            <h2>MindSketch</h2>
-          </Link>
+        <div className="main-nav flex">
+          <div className="logo">
+            <Link to="/" className="company-logo hover-link">
+              <h2>MindSketch</h2>
+            </Link>
+          </div>
           <div className="nav-links" id="nav-links">
             <ul className="flex">
               <li>
@@ -30,9 +32,29 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover-link">
+                <Link href="/" className="hover-link">
                   PRODUCTS
+                  <span class="icon-small">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
                 </Link>
+                <ul className="products">
+                  <li>
+                    <Link to="/" className="hover-link">
+                      TEXT SUMMARIZE
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="hover-link">
+                      TEXT COMPLETION
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover-link">
+                      CODE GENERATOR
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link to="/" className="hover-link">
